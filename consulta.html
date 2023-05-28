@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@300&display=swap');
+      </style>
+     -->
+    
+    <script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="logo" src="images/logo.svg" alt="">
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <img class ="logo-2" src="images/burger.jpg" alt="">
+
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="quienessomos.html">¿Quienes somos?</a></li>
+                        <li><a href="consulta.html">Consulta</a></li>
+                    </ul>
+                </div>
+                <!-- <img class ="logo-2" src="images/burger.jpg" alt=""> -->
+
+                <div class="menu-2">
+                    <ul>
+                        
+                    </ul>
+                    <!-- <div class="sociales">
+                        <a href="https://www.facebook.com/">
+                            <div class="social">
+                                <img src="images/s1.svg" alt="">
+
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/i/flow/login">
+                            <div class="social">
+                                <img src="images/s2.svg" alt="">
+
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <div class="social">
+                                <img src="images/s3.svg" alt="">
+
+                            </div>
+                        </a>
+
+                    </div> -->
+                </div>
+            </nav>
+
+        </div>
+       
+
+        <main>
+            <!-- FORMULARIO -->
+            <form action="#" class="formulario" id="formulario">
+                <!-- GRUPO DE USUARIO -->
+                <div class="formulario__grupo" id="grupo__usuario">
+                    <label class="formulario__label">Nombre de usuario</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+                </div>
+        
+                
+                <!-- GRUPO DE NOMBRE-->
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label class="formulario__label">Nombre y Apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+                </div>
+        
+        
+                <!-- GRUPO DE CONTRASEÑA 1-->
+                <div class="formulario__grupo" id="grupo__password">
+                    <label class="formulario__label">Contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password" id="password">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos</p>
+                </div>
+        
+        
+                <!-- GRUPO DE CONTRASEÑA 2-->
+                <div class="formulario__grupo" id="grupo__password2">
+                    <label class="formulario__label">Repetir la contraseña</label>
+                    <div class="formulario__grupo-input">
+                        <input type="password" class="formulario__input" name="password2" id="password2">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La contraseña no coincide</p>
+                </div>
+        
+        
+                <!-- GRUPO DE EMAIL -->
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label class="formulario__label">Correo Electonico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@daniel.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+                </div>
+        
+        
+                <!-- GRUPO DE Consulta -->
+                <div class="formulario__grupo" id="grupo__consulta">
+                    <label class="formulario__label">Consulta</label>
+                    <div class="formulario__grupo-input">
+                        <input type="consulta" class="formulario__input" name="consulta" id="consulta" placeholder="">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La consulta debe ser mas de 4 digitos</p>
+                </div>
+        
+        
+             
+                
+                <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+                </div>
+        
+        
+                <!-- GRUPO ENVIAR -->
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+                    <input class="formulario__btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </main>
+        
+
+
+        <footer class="footer">
+            <img class="logo-2" src="images/burger2.png" alt="">
+            <div class="links">
+                <h4>Encotranos en estos países</h4>
+                <ul>
+                    <li><a href="#">Argentina</a></li>
+                    <li><a href="#">Brasil</a></li>
+                    <li><a href="#">Chile</a></li>
+                    <li><a href="#">Colombia</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>Top comidas</h4>
+                    <ul>
+                        <li><a href="#">Hamburguesas</a></li>
+                        <li><a href="#">Empanadas</a></li>
+                        <li><a href="#">Burritos</a></li>
+                        <li><a href="#">Sanwiches</a></li>
+                    </ul>
+            </div>
+          
+            <div class="links">
+                <h4>Redes Sociales</h4>
+                <div class="sociales">
+                    <a href="https://www.facebook.com/">
+                        <div class="social">
+                            <img src="images/s1.svg" alt="">
+    
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="images/s2.svg" alt="">
+    
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <div class="social">
+                            <img src="images/s3.svg" alt="">
+    
+                        </div>
+                    </a>
+    
+                </div>
+            </div>
+    
+        </footer>
+
+        <script src="consulta.js"></script>
+</body>
+
+</html>
